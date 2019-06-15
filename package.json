@@ -1,0 +1,22 @@
+{
+  "name": "aws.fraserxu.dev",
+  "version": "0.1.0",
+  "bin": {
+    "aws.fraserxu.dev": "bin/aws.fraserxu.dev.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/node": "8.10.45",
+    "typescript": "^3.3.3333",
+    "ts-node": "^8.1.0",
+    "aws-cdk": "^0.34.0"
+  },
+  "dependencies": {
+    "@aws-cdk/cdk": "^0.34.0",
+    "source-map-support": "^0.5.9"
+  }
+}
