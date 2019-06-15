@@ -16,6 +16,11 @@
     "aws-cdk": "^0.34.0"
   },
   "dependencies": {
+    "@aws-cdk/aws-certificatemanager": "^0.34.0",
+    "@aws-cdk/aws-cloudfront": "^0.34.0",
+    "@aws-cdk/aws-route53": "^0.34.0",
+    "@aws-cdk/aws-route53-targets": "^0.34.0",
+    "@aws-cdk/aws-s3": "^0.34.0",
     "@aws-cdk/cdk": "^0.34.0",
     "source-map-support": "^0.5.9"
   }
