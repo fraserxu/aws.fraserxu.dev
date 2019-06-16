@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta
       name="description"
-      content="A demo site shows how to build a static site with aws-cdk"
+      content="A demo site shows how to build a static site hosted on AWS with aws-cdk"
     />
     <meta
       name="viewport"
@@ -18,14 +18,35 @@
     <h1>aws.fraserxu.me</h1>
     <section>
       <h2>
-        A demo site shows how to build a static site hosted on S3 with aws-cdk.
+        A demo site shows how to build a static site hosted on AWS with aws-cdk.
       </h2>
+      <h3>How it works?</h3>
+      <p>
+        This website use <strong>aws-cdk</strong>, a tool from
+        <strong>AWS</strong>, to generate a
+        <strong>Cloudformation</strong> stack template in
+        <strong>TypeScript</strong>.
+      </p>
       <ul>
-        <li>s3</li>
-        <li>route53</li>
-        <li>aws-certificatemanager</li>
-        <li>cloudfront</li>
+        <li>
+          A S3 bucket to hosts static assets
+        </li>
+        <li>Create a HostedZone on route53</li>
+        <li>Create a Certificate using DNS based validation</li>
+        <li>
+          Create a Cloudfront distribution using the S3 bucket and Certificate
+        </li>
+        <li>
+          Create a DNS record from the Cloudfront distribution to the custom
+          domain
+        </li>
       </ul>
     </section>
+    <footer>
+      <a href="https://github.com/fraserxu/aws.fraserxu.dev">Source code</a> |
+      Made by <a href="https://github.com/fraserxu">@fraserxu</a>
+      <br />
+      <i>An attempt to build a static site using differnt stacks or tools.</i>
+    </footer>
   </body>
 </html>

@@ -38,10 +38,14 @@ body {
 h1 {
   font-weight: normal;
   text-transform: lowercase;
-  font-size: 40px;
+  font-size: 24px;
   color: var(--purple);
   margin: 0;
   text-shadow: -4px 4px 0 var(--light);
+}
+
+h3 {
+  text-align: left;
 }
 
 a:link,
@@ -59,5 +63,5 @@ a:hover {
 
 ul {
   text-align: left;
-  list-style-type: none;
+  list-style-type: circle;
 }
