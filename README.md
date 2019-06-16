@@ -13,3 +13,14 @@ This website use `aws-cdk`, a tool from `AWS`, to generate a `Cloudformation` st
 - Create a DNS record from the Cloudfront distribution to the custom domain
 
 An attempt to build a static site using differnt stacks or tools.
+
+### Deployment
+
+```sh
+$ npm run build
+$ aws-vault exec [profile] -- cdk deploy
+$ aws s3 sync . s3://$STATIC_SITE_BUCKET
+$ aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"
+```
+
+- `aws-vault`: A vault for securely storing and accessing AWS credentials in development environments
