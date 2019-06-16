@@ -1,4 +1,4 @@
-## aws.fraserxu.me
+## aws.fraserxu.dev
 
 A demo site shows how to build a static site hosted on AWS with aws-cdk.
 
